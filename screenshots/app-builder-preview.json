@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PhysioCoach",
+      "hasCanvas": false,
+      "bodyTextLen": 721,
+      "bodyTextHash": "3fbe23a3919b906645f9a163a197927796417fc17d5eeb8060d79ce813ba4b7f",
+      "bodyTextPrefix": "PhysioCoach Form first. Then volume. TODAY Your next session is ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PhysioCoach",
+      "hasCanvas": false,
+      "bodyTextLen": 696,
+      "bodyTextHash": "04b99bf0650e96a40923d90df056e1613ce3ff8530ddbb2f8afd2489576d7429",
+      "bodyTextPrefix": "PhysioCoach TODAY Your next session is ready. Camera coaching wh",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-background: #0e1110;
+  --color-foreground: #eef0ec;
+  --color-card: #161a18;
+  --color-card-foreground: #eef0ec;
+  --color-popover: #161a18;
+  --color-popover-foreground: #eef0ec;
+  --color-primary: #c5cec4;
+  --color-primary-foreground: #0e1110;
+  --color-secondary: #1d2320;
+  --color-secondary-foreground: #eef0ec;
+  --color-muted: #1d2320;
+  --color-muted-foreground: #8b938c;
+  --color-accent: #1d2320;
+  --color-accent-foreground: #eef0ec;
+  --color-destructive: #c47a6a;
+  --color-border: #2a312d;
+  --color-input: #2a312d;
+  --color-ring: #c5cec4;
+  --color-good: #7d9a7e;
+  --color-warn: #c4a574;
+  --color-studio: #0c0f0d;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+  --radius-3xl: 32px;
+
+  --shadow-border: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-border-hover: 0 0 0 1px rgba(255, 255, 255, 0.13);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
